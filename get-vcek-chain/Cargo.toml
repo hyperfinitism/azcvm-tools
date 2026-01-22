@@ -1,0 +1,21 @@
+[package]
+name = "get-vcek-chain"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+license.workspace = true
+publish.workspace = true
+repository.workspace = true
+
+[features]
+default = [ "azcvm/snp" ]
+
+[dependencies]
+azcvm.workspace = true
+
+anyhow.workspace = true
+clap.workspace = true
+
+pem = "^3.0.6"
+x509-parser = "^0.18.0"
