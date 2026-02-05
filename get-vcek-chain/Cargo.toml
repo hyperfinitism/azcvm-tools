@@ -5,17 +5,15 @@ edition.workspace = true
 rust-version.workspace = true
 authors.workspace = true
 license.workspace = true
-publish.workspace = true
 repository.workspace = true
 
 [features]
-default = [ "azcvm/snp" ]
+default = [ ]
 
 [dependencies]
-azcvm.workspace = true
+azcvm = { workspace = true, features = ["snp"] }
 
 anyhow.workspace = true
-clap.workspace = true
-
-pem = "^3.0.6"
-x509-parser = "^0.18.0"
+clap = { workspace = true, features = ["derive"] }
+pem.workspace = true
+x509-parser.workspace = true
